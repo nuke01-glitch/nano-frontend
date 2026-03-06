@@ -18,7 +18,7 @@ export default function NanotechDashboard() {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch('https://nano-backend-nh71.onrender.com/predict', {
+      const res = await fetch('https://https://nano-backend-nh71.onrender.com/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
