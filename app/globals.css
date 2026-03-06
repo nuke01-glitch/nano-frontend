@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 selection:bg-blue-500/30;
+  }
+}
+
+@layer components {
+  /* Glassmorphism Effect */
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl;
+  }
+  
+  /* Glowing Text */
+  .glow-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400;
+  }
+}
